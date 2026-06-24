@@ -54,7 +54,7 @@
       "alternateName": "Windang FMC",
       "url": "https://www.windangfmc.com",
       "logo": "team_photos/logo.jpg",
-      "image": "https://static.wixstatic.com/media/0b3a0c_644a17c03c9340fab986f70a6dc629c3~mv2.jpg",
+      "image": "https://www.windangfmc.com/team_photos/reception.jpg",
       "description": "Windang Family Medical Centre is a comprehensive general practice offering bulk-billed GP services in Windang NSW, including preventive care, chronic disease management, mental health, women's health, skin checks and immunisations.",
       "telephone": "+61242010288",
       "faxNumber": "+61242010289",
@@ -190,7 +190,7 @@
 
   /* HERO */
   .hero{position:relative;overflow:hidden;padding:100px 24px 110px;text-align:center}
-  .hero-bg{position:absolute;inset:0;z-index:0;background-image:url('https://static.wixstatic.com/media/0b3a0c_644a17c03c9340fab986f70a6dc629c3~mv2.jpg');background-size:cover;background-position:center 30%;filter:brightness(0.3) saturate(0.7)}
+  .hero-bg{position:absolute;inset:0;z-index:0;background-image:url('team_photos/reception.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.38) saturate(0.7)}
   .hero-overlay{position:absolute;inset:0;z-index:0;background:rgba(18,77,66,0.55)}
   .hero-inner{position:relative;z-index:1;max-width:780px;margin:0 auto}
   .hero-badge{display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.3);color:white;font-size:0.8rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:24px}
@@ -377,7 +377,7 @@
 
   /* APPT CTA */
   .appt-cta{position:relative;overflow:hidden;padding:90px 24px;text-align:center}
-  .appt-cta-bg{position:absolute;inset:0;z-index:0;background-image:url('https://static.wixstatic.com/media/0b3a0c_644a17c03c9340fab986f70a6dc629c3~mv2.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.28) saturate(0.7)}
+  .appt-cta-bg{position:absolute;inset:0;z-index:0;background-image:url('team_photos/reception.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.32) saturate(0.7)}
   .appt-cta-overlay{position:absolute;inset:0;z-index:0;background:rgba(18,77,66,0.78)}
   .appt-cta-inner{position:relative;z-index:1}
   .appt-cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:white;margin-bottom:14px}
@@ -569,7 +569,7 @@
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-img-wrap">
-        <img src="https://static.wixstatic.com/media/0b3a0c_644a17c03c9340fab986f70a6dc629c3~mv2.jpg" alt="Doctor in consultation with patient"/>
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Doctor in consultation with patient"/>
         <div class="about-badge"><svg viewBox="0 0 24 24"><use href="#ic-heart"/></svg><div class="about-badge-text"><strong>Caring for Windang</strong>Trusted local general practice</div></div>
       </div>
       <div>
@@ -593,7 +593,7 @@
 <!-- PHOTO STRIP -->
 <div class="photo-strip">
   <div class="ps-item">
-    <img src="https://static.wixstatic.com/media/0b3a0c_644a17c03c9340fab986f70a6dc629c3~mv2.jpg" alt="GP consultation" loading="lazy"/>
+    <img src="team_photos/reception_strip.jpg" alt="Windang FMC reception" loading="lazy"/>
     <div class="ps-label">Patient-Centred Care</div>
   </div>
   <div class="ps-item">
@@ -601,7 +601,7 @@
     <div class="ps-label">Expert Medical Care</div>
   </div>
   <div class="ps-item">
-    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80" alt="Consultation room" loading="lazy"/>
+    <img src="team_photos/reception_strip.jpg" alt="Windang FMC reception" loading="lazy"/>
     <div class="ps-label">A Welcoming Environment</div>
   </div>
 </div>
@@ -729,6 +729,10 @@
         <div class="team-card" onclick="openProfile('mary')">
           <div class="team-avatar-photo"><img src="team_photos/mary.jpg" alt="Mary Brickovsky"/></div>
           <div class="team-info"><h3>Mary Brickovsky</h3><p>Medical Receptionist</p><span class="team-read-more">View profile →</span></div>
+        </div>
+        <div class="team-card" onclick="openProfile('leilani')">
+          <div class="team-avatar-photo"><img src="team_photos/leilani.jpg" alt="Leilani Phelps"/></div>
+          <div class="team-info"><h3>Leilani Phelps</h3><p>Medical Receptionist</p><span class="team-read-more">View profile →</span></div>
         </div>
       </div>
   </div>
@@ -1080,6 +1084,14 @@ const profiles = {
     bio:'Mary is a warm and efficient member of our reception team who is committed to making every patient feel welcome from the moment they arrive.',
     interests:[],
     contact:'To speak with Mary, call <a href="tel:0242010288">02 4201 0288</a>.',
+    book:false
+  },
+  leilani:{
+    name:'Leilani Phelps', role:'Medical Receptionist', quals:'',
+    img:'team_photos/leilani.jpg',
+    bio:'Leilani brings warmth and a genuine love of working with people to her role at Windang Family Medical Centre. Known for her friendly and approachable nature, she is committed to ensuring every patient has a positive experience from the moment they arrive. Outside of work, Leilani enjoys spending quality time with family and friends.',
+    interests:[],
+    contact:'To speak with Leilani, call <a href="tel:0242010288">02 4201 0288</a>.',
     book:false
   }
 };;
