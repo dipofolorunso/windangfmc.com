@@ -831,7 +831,7 @@
         <div class="pi-card-icon"><svg viewBox="0 0 24 24"><use href="#ic-lock"/></svg></div>
         <h3>Privacy</h3>
         <div class="pi-item"><div class="pi-dot"></div><div>Our practice takes its confidentiality and privacy obligations seriously. We handle your personal health information in accordance with Australian privacy law.</div></div>
-        <div class="pi-item"><div class="pi-dot"></div><div>Please speak to our reception staff to view our full privacy policy.</div></div>
+        <div class="pi-item"><div class="pi-dot"></div><div>You can <a href="/privacy.html" style="color:var(--teal);font-weight:600">read our privacy policy here</a>, or speak to our reception staff for a copy of our full practice privacy policy.</div></div>
         <div class="pi-item"><div class="pi-dot"></div><div>We may use electronic communication (email or SMS) to send you important health information.</div></div>
       </div>
 
@@ -842,7 +842,11 @@
 <!-- ACKNOWLEDGEMENT OF COUNTRY -->
 <div class="aoc-bar">
   <div class="aoc-inner">
-    <img src="https://static.wixstatic.com/media/0b3a0c_5314c6b61406471a9856186de9c421c5~mv2.png" alt="Australian Aboriginal Flag"/>
+    <svg viewBox="0 0 900 600" role="img" aria-label="Australian Aboriginal Flag" style="height:40px;width:auto;flex-shrink:0;display:block">
+      <rect width="900" height="300" fill="#000000"/>
+      <rect y="300" width="900" height="300" fill="#CC0000"/>
+      <circle cx="450" cy="300" r="150" fill="#FFFF00"/>
+    </svg>
     <p><strong>Acknowledgement of Country</strong> — We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past and present, and celebrate the stories, culture and traditions of Aboriginal and Torres Strait Islander Elders of all communities who also work and live on this land.</p>
   </div>
 </div>
@@ -860,7 +864,7 @@
         <h3>Our Location</h3>
         <address>19 Acacia Street<br/>Windang NSW 2528</address>
         <a href="https://maps.google.com/?q=19+Acacia+Street+Windang+NSW+2528" target="_blank" style="display:inline-block;margin-top:14px;background:var(--teal-light);color:var(--teal);font-weight:600;font-size:0.85rem;padding:8px 16px;border-radius:8px">Get Directions &rarr;</a>
-        <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.3!2d150.888!3d-34.531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s19+Acacia+St%2C+Windang+NSW+2528!5e0!3m2!1sen!2sau!4v1" allowfullscreen="" loading="lazy" title="Map"></iframe>
+        <iframe class="map-embed" src="https://maps.google.com/maps?q=19+Acacia+Street,+Windang+NSW+2528&amp;z=16&amp;output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Windang Family Medical Centre, 19 Acacia Street Windang"></iframe>
       </div>
       <div class="contact-card">
         <div class="contact-card-icon"><svg viewBox="0 0 24 24"><use href="#ic-clock"/></svg></div>
@@ -951,7 +955,7 @@
           <!-- Honeypot spam filter — invisible to humans -->
           <input type="text" name="_gotcha" style="display:none"/>
           <button type="submit" class="form-submit-btn" data-fs-submit-btn>Send Enquiry</button>
-          <p class="form-privacy-note">Your information is handled in accordance with our privacy policy and will only be used to respond to your enquiry.</p>
+          <p class="form-privacy-note">Your information is handled in accordance with our <a href="/privacy.html" style="color:var(--teal);font-weight:600">privacy policy</a> and will only be used to respond to your enquiry.</p>
         </form>
       </div>
     </div>
@@ -1000,7 +1004,8 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2025 Windang Family Medical Centre. All rights reserved.</span>
+    <span>&copy; <span id="copyYear">2026</span> Windang Family Medical Centre. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy.html" style="color:inherit;text-decoration:underline">Privacy Policy</a></span>
+<script>document.getElementById('copyYear').textContent = new Date().getFullYear();</script>
     <div class="footer-social">
       <a href="https://www.facebook.com/p/Windang-Family-Medical-Centre-100068832769546/" target="_blank" title="Facebook">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="white" stroke="none"><use href="#ic-fb"/></svg>
